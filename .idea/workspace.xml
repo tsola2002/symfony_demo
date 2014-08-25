@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe73ca8-d766-4df0-bb2f-58aa327f33c0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blog/ModelBundle/Entity/Author.php" afterPath="$PROJECT_DIR$/src/Blog/ModelBundle/Entity/Author.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\symfony_demo\src\Blog\CoreBundle\Controller\DefaultController.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="symfony_demo.iws" />
@@ -28,61 +25,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Version20140822194036.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20140822194036.php">
+      <file leaf-file-name="PostController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Blog/CoreBundle/Controller/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="1" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="629">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="58" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1156">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="72" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="731">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="10-Authors.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Blog/ModelBundle/DataFixtures/ORM/10-Authors.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="26" selection-start="804" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="473" max-vertical-offset="884">
+            <state line="20" column="21" selection-start="447" selection-end="447" vertical-scroll-proportion="0.48364154" vertical-offset="0" max-vertical-offset="703">
               <folding>
-                <element signature="e#53#88#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="15-Posts.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Blog/ModelBundle/DataFixtures/ORM/15-Posts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="59" selection-start="3064" selection-end="3064" vertical-scroll-proportion="0.4219858" vertical-offset="816" max-vertical-offset="1496">
-              <folding>
-                <element signature="e#53#86#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Author.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Blog/ModelBundle/Entity/Author.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="39" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2176">
-              <folding>
-                <element signature="e#43#91#0" expanded="true" />
+                <element signature="e#46#103#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,15 +69,16 @@
         <option value="$PROJECT_DIR$/src/Blog/ModelBundle/DataFixtures/ORM/10-Authors.php" />
         <option value="$PROJECT_DIR$/src/Blog/ModelBundle/Entity/Author.php" />
         <option value="$PROJECT_DIR$/src/Blog/ModelBundle/DataFixtures/ORM/15-Posts.php" />
+        <option value="$PROJECT_DIR$/src/Blog/CoreBundle/Controller/PostController.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="79" />
-    <option name="y" value="190" />
-    <option name="width" value="1199" />
-    <option name="height" value="378" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="786" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -176,6 +125,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,8 +175,26 @@
               <option name="myItemId" value="Blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ModelBundle" />
+              <option name="myItemId" value="symfony_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -248,65 +216,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ModelBundle" />
+              <option name="myItemId" value="CoreBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModelBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataFixtures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ORM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,7 +280,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="79" y="190" width="1199" height="378" extended-state="0" />
+    <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -370,7 +289,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24852072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25546876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -399,85 +318,59 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
+        <state line="17" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Blog/ModelBundle/Entity/Timestampable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/CoreBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.529595" vertical-offset="0" max-vertical-offset="321">
-          <folding />
-        </state>
+        <state line="36" column="0" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Blog/ModelBundle/Entity/Post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="30" selection-start="1884" selection-end="1884" vertical-scroll-proportion="0.72897196" vertical-offset="1772" max-vertical-offset="2397">
-          <folding>
-            <element signature="e#43#75#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="118" column="30" selection-start="1884" selection-end="1884" vertical-scroll-proportion="0.72897196" vertical-offset="1772" max-vertical-offset="2397" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.7943925" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
+        <state line="15" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.7943925" vertical-offset="0" max-vertical-offset="357" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20140822194036.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="1" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="629">
-          <folding />
-        </state>
+        <state line="31" column="1" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="629" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="58" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1156">
-          <folding />
-        </state>
+        <state line="13" column="58" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1156" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="72" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="731">
-          <folding />
-        </state>
+        <state line="17" column="72" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="731" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Blog/ModelBundle/DataFixtures/ORM/10-Authors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="26" selection-start="804" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="473" max-vertical-offset="884">
-          <folding>
-            <element signature="e#53#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/ModelBundle/Entity/Author.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="39" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2176">
-          <folding>
-            <element signature="e#43#91#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="44" column="26" selection-start="804" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="473" max-vertical-offset="884" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Blog/ModelBundle/DataFixtures/ORM/15-Posts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="59" selection-start="3064" selection-end="3064" vertical-scroll-proportion="0.4219858" vertical-offset="816" max-vertical-offset="1496">
+        <state line="55" column="59" selection-start="3064" selection-end="3064" vertical-scroll-proportion="0.4219858" vertical-offset="816" max-vertical-offset="1496" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/ModelBundle/Entity/Author.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="39" selection-start="924" selection-end="924" vertical-scroll-proportion="-1.1525424" vertical-offset="1173" max-vertical-offset="2176" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/CoreBundle/Controller/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="21" selection-start="447" selection-end="447" vertical-scroll-proportion="0.48364154" vertical-offset="0" max-vertical-offset="703">
           <folding>
-            <element signature="e#53#86#0" expanded="true" />
+            <element signature="e#46#103#0" expanded="true" />
           </folding>
         </state>
       </provider>
