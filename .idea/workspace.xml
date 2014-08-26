@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe73ca8-d766-4df0-bb2f-58aa327f33c0" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\symfony_demo\src\Blog\CoreBundle\Controller\DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\symfony_demo\src\Blog\CoreBundle\Tests\Controller\DefaultControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\symfony_demo\src\Blog\ModelBundle\Tests\Controller\DefaultControllerTest.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blog/CoreBundle/Tests/Controller/PostControllerTest.php" afterPath="$PROJECT_DIR$/src/Blog/CoreBundle/Tests/Controller/PostControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="symfony_demo.iws" />
@@ -25,13 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PostController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Blog/CoreBundle/Controller/PostController.php">
+      <file leaf-file-name="PostControllerTest.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Blog/CoreBundle/Tests/Controller/PostControllerTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="21" selection-start="447" selection-end="447" vertical-scroll-proportion="0.48364154" vertical-offset="0" max-vertical-offset="703">
-              <folding>
-                <element signature="e#46#103#0" expanded="true" />
-              </folding>
+            <state line="27" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.6529161" vertical-offset="0" max-vertical-offset="703">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,6 +71,7 @@
         <option value="$PROJECT_DIR$/src/Blog/ModelBundle/Entity/Author.php" />
         <option value="$PROJECT_DIR$/src/Blog/ModelBundle/DataFixtures/ORM/15-Posts.php" />
         <option value="$PROJECT_DIR$/src/Blog/CoreBundle/Controller/PostController.php" />
+        <option value="$PROJECT_DIR$/src/Blog/CoreBundle/Tests/Controller/PostControllerTest.php" />
       </list>
     </option>
   </component>
@@ -88,12 +90,12 @@
             <id />
           </State>
           <State>
-            <id>Spelling</id>
+            <id>PHP</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Spelling</id>
+            <id>PhpCSValidationInspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -220,6 +222,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoreBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -232,7 +264,7 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="Errors" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -280,7 +312,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="786" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -316,6 +348,20 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Blog/CoreBundle/Tests/Controller/PostControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/CoreBundle/Tests/Controller/PostControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
@@ -341,11 +387,6 @@
         <state line="31" column="1" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="629" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="58" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1156" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="72" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="731" />
@@ -368,10 +409,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Blog/CoreBundle/Controller/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="21" selection-start="447" selection-end="447" vertical-scroll-proportion="0.48364154" vertical-offset="0" max-vertical-offset="703">
-          <folding>
-            <element signature="e#46#103#0" expanded="true" />
-          </folding>
+        <state line="24" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/CoreBundle/Tests/Controller/PostControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.6529161" vertical-offset="0" max-vertical-offset="703">
+          <folding />
         </state>
       </provider>
     </entry>
