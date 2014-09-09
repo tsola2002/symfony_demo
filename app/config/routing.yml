@@ -1,0 +1,5 @@
+isaac_library:
+    resource: "@IsaacLibraryBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
