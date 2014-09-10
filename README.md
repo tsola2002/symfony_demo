@@ -4,7 +4,7 @@ Library Listing App
 inorder to use this app, clone this app to your local development machine
 
 DISPLAYING CONTACTS
-----------------------------------AbstractType
+----------------------------------
 
 1) browse to localhost/symfony_demo/web/app_dev.php/contact/
 

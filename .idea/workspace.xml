@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfe73ca8-d766-4df0-bb2f-58aa327f33c0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Isaac/LibraryBundle/Controller/ContactController.php" afterPath="$PROJECT_DIR$/src/Isaac/LibraryBundle/Controller/ContactController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Isaac/LibraryBundle/Form/ContactType.php" afterPath="$PROJECT_DIR$/src/Isaac/LibraryBundle/Form/ContactType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Isaac/LibraryBundle/Resources/views/Contact/edit.html.twig" afterPath="$PROJECT_DIR$/src/Isaac/LibraryBundle/Resources/views/Contact/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Isaac/LibraryBundle/Resources/views/Contact/new.html.twig" afterPath="$PROJECT_DIR$/src/Isaac/LibraryBundle/Resources/views/Contact/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Isaac/LibraryBundle/Resources/views/Contact/show.html.twig" afterPath="$PROJECT_DIR$/src/Isaac/LibraryBundle/Resources/views/Contact/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="symfony_demo.iws" />
@@ -42,7 +37,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="19" selection-start="140" selection-end="140" vertical-scroll-proportion="0.29209623" vertical-offset="0" max-vertical-offset="646">
+            <state line="6" column="34" selection-start="175" selection-end="175" vertical-scroll-proportion="0.35051546" vertical-offset="0" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -248,7 +243,11 @@
       <created>1410353965885</created>
       <updated>1410353965886</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="markdown file updated">
+      <created>1410354407066</created>
+      <updated>1410354407066</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -287,7 +286,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="symfony2 forms styled with bootstrap &amp; readme.md file updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="symfony2 forms styled with bootstrap &amp; readme.md file updated" />
+    <MESSAGE value="markdown file updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="markdown file updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -378,7 +378,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="140" selection-end="140" vertical-scroll-proportion="0.29209623" vertical-offset="0" max-vertical-offset="646">
+        <state line="6" column="34" selection-start="175" selection-end="175" vertical-scroll-proportion="0.35051546" vertical-offset="0" max-vertical-offset="646">
           <folding />
         </state>
       </provider>
