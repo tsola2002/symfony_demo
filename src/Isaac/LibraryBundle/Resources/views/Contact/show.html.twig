@@ -1,28 +1,28 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
-    <h1>Contact</h1>
+    <h1>Contact Details</h1>
 
-    <table class="record_properties">
+    <table class="record_properties table">
         <tbody>
             <tr>
-                <th>Id</th>
+                <th>ID</th>
                 <td>{{ entity.id }}</td>
             </tr>
             <tr>
-                <th>Firstname</th>
+                <th>First Name</th>
                 <td>{{ entity.firstname }}</td>
             </tr>
             <tr>
-                <th>Lastname</th>
+                <th>Last Name</th>
                 <td>{{ entity.lastname }}</td>
             </tr>
             <tr>
-                <th>Addressline1</th>
+                <th>Address Line1</th>
                 <td>{{ entity.addressline1 }}</td>
             </tr>
             <tr>
-                <th>Addressline2</th>
+                <th>Address Line2</th>
                 <td>{{ entity.addressline2 }}</td>
             </tr>
             <tr>
@@ -34,27 +34,27 @@
                 <td>{{ entity.postcode }}</td>
             </tr>
             <tr>
-                <th>Telephonehome</th>
+                <th>Telephone Home</th>
                 <td>{{ entity.telephonehome }}</td>
             </tr>
             <tr>
-                <th>Telephonemobile</th>
+                <th>Telephone Mobile</th>
                 <td>{{ entity.telephonemobile }}</td>
             </tr>
         </tbody>
     </table>
 
         <ul class="record_actions">
-    <li>
+
         <a href="{{ path('contact') }}">
             Back to the list
         </a>
-    </li>
-    <li>
+
+
         <a href="{{ path('contact_edit', { 'id': entity.id }) }}">
             Edit
         </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+
+   {{ form(delete_form) }}
+
 {% endblock %}

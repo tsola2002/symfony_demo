@@ -15,14 +15,54 @@ class ContactType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('firstname')
-            ->add('lastname')
-            ->add('addressline1')
-            ->add('addressline2')
-            ->add('city')
-            ->add('postcode')
-            ->add('telephonehome')
-            ->add('telephonemobile')
+            ->add('firstname', 'text', array(
+                'label' => 'First Name',
+                'attr'  => array(
+                    'class' => 'form-control'
+                )
+            ))
+            ->add('lastname', 'text', array(
+                'label' => 'Last Name',
+                'attr'  => array(
+                    'class' => 'form-control'
+                )
+            ))
+            ->add('addressline1', 'text', array(
+                'label' => 'adressline1',
+                'attr'  => array(
+                    'class' => 'form-control'
+                )
+            ))
+            ->add('addressline2', 'text', array(
+                'label' => 'addressline2',
+                'attr'  => array(
+                    'class' => 'form-control'
+                )
+            ))
+            ->add('city', 'text', array(
+                'label' => 'city',
+                'attr'  => array(
+                    'class' => 'form-control'
+                )
+            ))
+            ->add('postcode', 'text', array(
+                'label' => 'postcode',
+                'attr'  => array(
+                    'class' => 'form-control'
+                )
+            ))
+            ->add('telephonehome', 'text', array(
+                'label' => 'telephonehome',
+                'attr'  => array(
+                    'class' => 'form-control'
+                )
+            ))
+            ->add('telephonemobile', 'text', array(
+                'label' => 'telephonemobile',
+                'attr'  => array(
+                    'class' => 'form-control'
+                )
+            ))
         ;
     }
     
