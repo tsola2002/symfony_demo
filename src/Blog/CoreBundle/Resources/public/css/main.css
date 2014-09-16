@@ -59,6 +59,21 @@ article header p{
     margin: 0;
 }
 
+/*SIDEBAR*/
+
+aside{
+    float: right;
+    width: 30%;
+    padding: 5px 15px;
+    margin: 5px;
+    background-color: #c3c3c3;
+    border: 1px solid #b5b5b5;
+}
+
+aside h3{
+    font-weight: bold;
+}
+
 footer{
     position: absolute;
     left: 0;
