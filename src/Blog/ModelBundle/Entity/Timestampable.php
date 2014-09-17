@@ -17,9 +17,17 @@ abstract class Timestampable
      * @var \DateTime
      *
      * @Gedmo\Timestampable(on="create")
-     * @ORM\Column(name="createdAt", type="datetime")
+     * @ORM\Column(name="created_at", type="datetime")
      */
     private $createdAt;
+
+    /**
+     * @var \DateTime
+     *
+     * @Gedmo\Timestampable(on="update")
+     * @ORM\Column(name="updated_at", type="datetime", nullable=true)
+     */
+    private $updatedAt;
 
 
 
@@ -28,9 +36,8 @@ abstract class Timestampable
      *
      * @param \DateTime $createdAt
      *
-     * @return Author
+     * @return Timestampable
      */
-
     public function setCreatedAt($createdAt)
     {
         $this->createdAt = $createdAt;
@@ -46,6 +53,31 @@ abstract class Timestampable
     public function getCreatedAt()
     {
         return $this->createdAt;
+    }
+
+
+    /**
+     * Set updatedAt
+     *
+     * @param \DateTime $updatedAt
+     *
+     * @return Timestampable
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->createdAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedAt
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
     }
 
 }
