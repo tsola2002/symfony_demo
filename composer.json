@@ -13,6 +13,7 @@
         "doctrine/doctrine-bundle": "~1.2",
         "doctrine/doctrine-fixtures-bundle": "dev-master",
         "doctrine/migrations": "dev-master",
+        "stof/doctrine-extensions-bundle": "dev-master",
         "doctrine/doctrine-migrations-bundle": "dev-master",
         "twig/extensions": "~1.0",
         "symfony/assetic-bundle": "~2.3",
