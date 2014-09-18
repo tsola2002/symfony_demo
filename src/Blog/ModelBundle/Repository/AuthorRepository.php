@@ -21,7 +21,7 @@ class AuthorRepository extends EntityRepository
     {
         $qb = $this->getQueryBuilder()
                    ->orderBy('a.id', 'asc')
-                   -setMaxResults(1);
+                   ->setMaxResults(1);
 
         return $qb->getQuery()->getSingleResult();
     }

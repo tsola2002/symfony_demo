@@ -12,12 +12,38 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class AuthorController extends Controller
 {
     /**
-     * @Route("/show")
+     * Show a posts by author
+     *
+     * @param string $slug
+     *
+     * @return array
+     * @throws NotFoundHttpException
+     *
+     * @Route("/author/{slug}")
      * @Template()
      */
-    public function showAction()
+    public function showAction($slug)
     {
+        $author =  $this->getDoctrine()->getRepository('ModelBundle:Author')->findOneBy(
+            array(
+              'slug' => $slug
+            )
+        );
 
+        if (null === $author) {
+            throw createNotFoundException('Author was not found');
+        }
+
+        $posts = $this->getDoctrine()->getRepository('ModelBundle:Post')->findBy(
+            array(
+                'author' => $author
+            )
+        );
+
+        return array(
+            'author' => $author,
+            'posts' => $posts
+        );
     }
 
 }
