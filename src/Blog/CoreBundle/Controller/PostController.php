@@ -4,9 +4,15 @@ namespace Blog\CoreBundle\Controller;
 
 use Blog\ModelBundle\Form\CommentType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
+
+
+/**
+ * Class PostController
+ */
 class PostController extends Controller
 {
     /**
@@ -58,6 +64,24 @@ class PostController extends Controller
             'post' => $post,
             'form' => $form->createView()
         );
+    }
+
+
+    /**
+     * Create comment
+     *
+     * @param Request $request
+     *
+     * @param string $slug
+     *
+     * @Route("/{slug}/create-comment")
+     * @Method("POST")
+     * @Template("CoreBundle:Post:show.html.twig")
+     *
+     */
+    public function createCommentAction(Request $request, $slug)
+    {
+        return array();
     }
 
 }
