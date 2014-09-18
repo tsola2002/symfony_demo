@@ -5,6 +5,7 @@ namespace Blog\ModelBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 //adds validator class for validation use
 use Symfony\Component\Validator\Constraints as Assert;
+use Doctrine\Common\Collections\ArrayCollection;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
