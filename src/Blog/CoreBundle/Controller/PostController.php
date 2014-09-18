@@ -48,7 +48,7 @@ class PostController extends Controller
         );
 
         if (null === $post) {
-           throw createNotFoundException('Post was not found');
+           throw $this->createNotFoundException('Post was not found');
         }
 
         return array(

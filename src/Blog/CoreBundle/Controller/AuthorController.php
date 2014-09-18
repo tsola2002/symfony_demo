@@ -31,7 +31,7 @@ class AuthorController extends Controller
         );
 
         if (null === $author) {
-            throw createNotFoundException('Author was not found');
+            throw $this->createNotFoundException('Author was not found');
         }
 
         $posts = $this->getDoctrine()->getRepository('ModelBundle:Post')->findBy(
