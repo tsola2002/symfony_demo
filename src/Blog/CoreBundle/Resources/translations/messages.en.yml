@@ -1,8 +1,8 @@
 home: Home
 
+on: on
 by: by
 read.more: Read more
-author: Author
 
 post:
   plural: Posts
@@ -11,5 +11,9 @@ post:
   by: Posts by
   by.author: Posts by %name%
 
+comment:
+  plural: Comments
+
 author:
+  title: Author
   empty.posts: This author did not write any posts yet
