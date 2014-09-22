@@ -1,7 +1,8 @@
 <?php
 
-namespace Blog\ModelBundle\Controller;
+namespace Blog\AdminBundle\Controller;
 
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -21,7 +22,9 @@ class PostController extends Controller
     /**
      * Lists all Post entities.
      *
-     * @Route("/", name="post")
+     * @return array
+     *
+     * @Route("/")
      * @Method("GET")
      * @Template()
      */
@@ -38,9 +41,13 @@ class PostController extends Controller
     /**
      * Creates a new Post entity.
      *
-     * @Route("/", name="post_create")
+     * @param Request $request
+     *
+     * @return array
+     *
+     * @Route("/")
      * @Method("POST")
-     * @Template("ModelBundle:Post:new.html.twig")
+     * @Template("AdminBundle:Post:new.html.twig")
      */
     public function createAction(Request $request)
     {
@@ -53,7 +60,7 @@ class PostController extends Controller
             $em->persist($entity);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('post_show', array('id' => $entity->getId())));
+            return $this->redirect($this->generateUrl('blog_admin_post_show', array('id' => $entity->getId())));
         }
 
         return array(
@@ -72,7 +79,7 @@ class PostController extends Controller
     private function createCreateForm(Post $entity)
     {
         $form = $this->createForm(new PostType(), $entity, array(
-            'action' => $this->generateUrl('post_create'),
+            'action' => $this->generateUrl('blog_admin_post_create'),
             'method' => 'POST',
         ));
 
@@ -84,7 +91,9 @@ class PostController extends Controller
     /**
      * Displays a form to create a new Post entity.
      *
-     * @Route("/new", name="post_new")
+     * @return array
+     *
+     * @Route("/new")
      * @Method("GET")
      * @Template()
      */
@@ -102,7 +111,12 @@ class PostController extends Controller
     /**
      * Finds and displays a Post entity.
      *
-     * @Route("/{id}", name="post_show")
+     * @param int $id
+     *
+     * @throws NotFoundHttpException
+     * @return array
+     *
+     * @Route("/{id}")
      * @Method("GET")
      * @Template()
      */
@@ -127,7 +141,12 @@ class PostController extends Controller
     /**
      * Displays a form to edit an existing Post entity.
      *
-     * @Route("/{id}/edit", name="post_edit")
+     * @param int $id
+     *
+     * @throws NotFoundHttpException
+     * @return array
+     *
+     * @Route("/{id}/edit")
      * @Method("GET")
      * @Template()
      */
@@ -135,6 +154,7 @@ class PostController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
+        /** @var Post $entity */
         $entity = $em->getRepository('ModelBundle:Post')->find($id);
 
         if (!$entity) {
@@ -161,7 +181,7 @@ class PostController extends Controller
     private function createEditForm(Post $entity)
     {
         $form = $this->createForm(new PostType(), $entity, array(
-            'action' => $this->generateUrl('post_update', array('id' => $entity->getId())),
+            'action' => $this->generateUrl('blog_admin_post_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
 
@@ -172,14 +192,21 @@ class PostController extends Controller
     /**
      * Edits an existing Post entity.
      *
-     * @Route("/{id}", name="post_update")
+     * @param Request $request
+     * @param int     $id
+     *
+     * @throws NotFoundHttpException
+     * @return array
+     *
+     * @Route("/{id}")
      * @Method("PUT")
-     * @Template("ModelBundle:Post:edit.html.twig")
+     * @Template("AdminBundle:Post:edit.html.twig")
      */
     public function updateAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();
 
+        /** @var Post $entity */
         $entity = $em->getRepository('ModelBundle:Post')->find($id);
 
         if (!$entity) {
@@ -193,7 +220,7 @@ class PostController extends Controller
         if ($editForm->isValid()) {
             $em->flush();
 
-            return $this->redirect($this->generateUrl('post_edit', array('id' => $id)));
+            return $this->redirect($this->generateUrl('blog_admin_post_edit', array('id' => $id)));
         }
 
         return array(
@@ -205,7 +232,13 @@ class PostController extends Controller
     /**
      * Deletes a Post entity.
      *
-     * @Route("/{id}", name="post_delete")
+     * @param Request $request
+     * @param int $id
+     *
+     * @throws NotFoundHttpException
+     * @return RedirectResponse
+     *
+     * @Route("/{id}")
      * @Method("DELETE")
      */
     public function deleteAction(Request $request, $id)
@@ -225,7 +258,7 @@ class PostController extends Controller
             $em->flush();
         }
 
-        return $this->redirect($this->generateUrl('post'));
+        return $this->redirect($this->generateUrl('blog_admin_post_index'));
     }
 
     /**
@@ -241,7 +274,6 @@ class PostController extends Controller
             ->setAction($this->generateUrl('post_delete', array('id' => $id)))
             ->setMethod('DELETE')
             ->add('submit', 'submit', array('label' => 'Delete'))
-            ->getForm()
-        ;
+            ->getForm();
     }
 }
