@@ -225,7 +225,7 @@ class AuthorController extends Controller
      * Deletes a Author entity.
      *
      * @param Request $request
-     * @paran int $id
+     * @param int $id
      *
      * @Route("/{id}")
      * @Method("DELETE")
