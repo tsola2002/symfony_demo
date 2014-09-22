@@ -10,7 +10,9 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
  */
 class AuthorControllerTest extends WebTestCase
 {
-
+    /**
+     * Test Author CRUD
+     */
     public function testCompleteScenario()
     {
         // Create a new client to browse the application

@@ -1,37 +1,31 @@
-{% extends '::base.html.twig' %}
+{% extends 'AdminBundle::layout.html.twig' %}
 
-{% block body -%}
-    <h1>Post</h1>
+{% block title %}{{ entity.title }}{% endblock %}
+
+{% block section %}
+    <h1>{{ entity.title }}</h1>
 
     <table class="record_properties">
         <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ entity.id }}</td>
-            </tr>
             <tr>
                 <th>Title</th>
                 <td>{{ entity.title }}</td>
             </tr>
             <tr>
-                <th>Slug</th>
-                <td>{{ entity.slug }}</td>
-            </tr>
-            <tr>
                 <th>Body</th>
-                <td>{{ entity.body }}</td>
+                <td>{{ entity.body | nl2br }}</td>
             </tr>
         </tbody>
     </table>
 
         <ul class="record_actions">
     <li>
-        <a href="{{ path('post') }}">
+        <a href="{{ path('blog_admin_post_index') }}">
             Back to the list
         </a>
     </li>
     <li>
-        <a href="{{ path('post_edit', { 'id': entity.id }) }}">
+        <a href="{{ path('blog_admin_post_edit', { 'id': entity.id }) }}">
             Edit
         </a>
     </li>

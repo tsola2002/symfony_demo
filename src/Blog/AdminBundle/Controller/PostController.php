@@ -271,7 +271,7 @@ class PostController extends Controller
     private function createDeleteForm($id)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('post_delete', array('id' => $id)))
+            ->setAction($this->generateUrl('blog_admin_post_delete', array('id' => $id)))
             ->setMethod('DELETE')
             ->add('submit', 'submit', array('label' => 'Delete'))
             ->getForm();

@@ -4,6 +4,9 @@ namespace Blog\ModelBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
+/**
+ * Class PostControllerTest
+ */
 class PostControllerTest extends WebTestCase
 {
 
@@ -19,12 +22,12 @@ class PostControllerTest extends WebTestCase
         ));
 
         // Create a new entry in the database
-        $crawler = $client->request('GET', '/post/');
+        $crawler = $client->request('GET', '/admin/post/');
         $this->assertTrue($client->getResponse()->isSuccessful(), "The response was not successful");
         $crawler = $client->click($crawler->selectLink('Create a new entry')->link());
 
         //get the author value
-        $authorValue = $crawler->filter('#blog_modelbundle_post_author option:contains("David")')->attr('value');
+        $authorValue = $crawler->filter('#blog_modelbundle_post_author option:contains("John")')->attr('value');
 
         // Fill in the form and submit it
         $form = $crawler->selectButton('Create')->form(
