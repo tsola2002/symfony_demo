@@ -6,24 +6,25 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
+/**
+ * Class PostType
+ */
 class PostType extends AbstractType
 {
-        /**
-     * @param FormBuilderInterface $builder
-     * @param array $options
+
+    /**
+     * {@inheritDoc}
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
             ->add('title')
-            ->add('slug')
             ->add('body')
-            ->add('author')
-        ;
+            ->add('author');
     }
-    
+
     /**
-     * @param OptionsResolverInterface $resolver
+     * {@inheritDoc}
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
@@ -33,7 +34,7 @@ class PostType extends AbstractType
     }
 
     /**
-     * @return string
+     * {@inheritDoc}
      */
     public function getName()
     {
